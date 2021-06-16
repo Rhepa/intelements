@@ -6,10 +6,12 @@ var darkblue= "#2C439B";
 var violet= "#25255f";
 var yellow= "#e8b13b";
 
+var opacity
+
 
 // COLOR PALLETTE ARRAY
 var colorPalette= [lightblue, pink, lightblue, violet, yellow];
-var colorBG=[]
+var opacity=[]
 var randomColor = Math.floor(Math.random() *colorPalette.length); 
 
 // CHANGE BG COLOR
@@ -26,7 +28,7 @@ var randomColor = Math.floor(Math.random() *colorPalette.length);
 
 
 //FOR LOOP
-for(var step = 0; step < 100; step++) {
+for(var step = 10; step < 100; step++) {
  $("#circle-container").append("<div></div>");
 };
 
@@ -34,6 +36,8 @@ $("#circle-container div").each(function(){
   var randomColorBoxes = colorPalette[Math.floor(Math.random() *colorPalette.length)]; 
 $(this).css("background-color", randomColorBoxes);
 });
+
+
 
 //Random w & h
 $("#circle-container div").click(function(){
