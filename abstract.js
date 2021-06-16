@@ -4,26 +4,16 @@ var lightblue ="#33C7F7";
 var pink="#DFA0C8";
 var darkblue= "#2C439B";
 var violet= "#25255f";
+var yellow= "#e8b13b";
 
 
 // COLOR PALLETTE ARRAY
-var colorPalette= [lightblue, pink, lightblue, violet];
+var colorPalette= [lightblue, pink, lightblue, violet, yellow];
 var colorBG=[]
 var randomColor = Math.floor(Math.random() *colorPalette.length); 
 
 // CHANGE BG COLOR
 // $("body").css("background-color",colorPalette[randomColor]);
-
-// HIDE BOX
-$("#circle-container").ready(function() {
-  $("#circle-container div").click(function() {
-    $(this).fadeOut();
-  });
-  $("button").click(function() {
-    $("#circle-container div").fadeIn();
-  });
-});
-
   
   // // // DIV BOX SHOW/HIDE FUNCTION FRoM W3 SCHOOL
   // var x = document.getElementById("box-container");
@@ -52,9 +42,16 @@ $("#circle-container div").click(function(){
   $(this).css("width",randomWidth).css("height",randomHeight)
 });
 
+// HIDE AND SHOW BOX
+$("#circle-container").ready(function() {
+  $("#circle-container div").click(function() {
+    $(this).fadeOut();
+  });
+  $("button").click(function() {
+    $("#circle-container div").fadeIn();
+  });
+});
 
-
-console.log("hello world")
 
 
 
