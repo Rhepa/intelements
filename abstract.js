@@ -18,13 +18,13 @@ var randomColor = Math.floor(Math.random() *colorPalette.length);
 // $("body").css("background-color",colorPalette[randomColor]);
   
   // // // DIV BOX SHOW/HIDE FUNCTION FRoM W3 SCHOOL
-  // var x = document.getElementById("box-container");
-  // // $("#box-container").append("<div></div>"); //ADD MORE BOXES
+  // var x = document.getElementById("circle-container");
+  // $("#box-container").append("<div></div>"); //ADD MORE BOXES
   // if (x.style.display === "none") {
   //   x.style.display = "block";
   // } else {
   //   x.style.display = "none";
-  // }
+  // };
 
 
 //FOR LOOP
@@ -36,8 +36,6 @@ $("#circle-container div").each(function(){
   var randomColorBoxes = colorPalette[Math.floor(Math.random() *colorPalette.length)]; 
 $(this).css("background-color", randomColorBoxes);
 });
-
-
 
 //Random w & h
 $("#circle-container div").click(function(){
