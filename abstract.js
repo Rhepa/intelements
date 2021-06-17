@@ -15,19 +15,20 @@ for(var step = 10; step < 100; step++) {
  $("#circle-container").append("<div></div>");
 };
 
+// RANDOM COLOR ASSIGNED
 $("#circle-container div").each(function(){
   var randomColorBoxes = colorPalette[Math.floor(Math.random() *colorPalette.length)]; 
   $(this).css("background-color", randomColorBoxes);
 });
 
-//Random w & h
+//RANDOM WIDTH/HEIGHT
 $("#circle-container div").click(function(){
   var randomWidth = Math.random() * 200;
   var randomHeight = Math.random() * 200;
   $(this).css("width",randomWidth).css("height",randomHeight)
 });
 
-// HIDE AND SHOW BOX
+// HIDE/SHOW BUTTON
 $("#circle-container").ready(function() {
   $("#circle-container div").click(function() {
     $(this).fadeOut();

@@ -56,7 +56,7 @@
     border-radius: 50px;
     background: white;
     opacity:90%;
-    animation: colorchange2 7s ease-in infinite;
+    animation: colorchange2 4.5s ease-in infinite;
   }
   #circle-container div:hover{
     cursor: pointer;
@@ -68,9 +68,9 @@
    height: 80px;
    background: white;
  }
-/* @keyframes colorchange {
+ @keyframes colorchange {
    100%{background-color: white;}
- }*/
+ }
  @keyframes colorchange2 {
   0% {background-color: none;
     opacity: 0;}
