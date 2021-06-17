@@ -60,7 +60,7 @@
   }
   #circle-container div:hover{
     cursor: pointer;
-    animation: colorchange 7s ease-in;
+    animation: colorchange 5s ease-in;
     animation: scale 10s linear infinite
   }
   #square{
@@ -68,13 +68,13 @@
    height: 80px;
    background: white;
  }
- @keyframes colorchange {
+/* @keyframes colorchange {
    100%{background-color: white;}
- }
+ }*/
  @keyframes colorchange2 {
   0% {background-color: none;
     opacity: 0;}
-    50% {background-color: blue;}`
+    30% {background-color: #2C439B;}`
     100% {background-color: none;
      opacity: 1;}
    }

@@ -1,9 +1,9 @@
 // DECLARING COLORS
 var lightblue ="#33C7F7";
-var pink="#DFA0C8";
+var pink="#ff6699";
 var darkblue= "#2C439B";
 var violet= "#25255f";
-var yellow= "#e8b13b";
+var yellow= "#ffcc99";
 
 // COLOR PALLETTE ARRAY
 var colorPalette= [lightblue, pink, lightblue, violet, yellow];
